@@ -56,6 +56,15 @@ public class FrmPrincipal  extends javax.swing.JFrame {
 		jButton1.setToolTipText( "Fechar tela." );
 		jButton1.setBounds( 110, 140, 75, 20 );
 		jButton1.setCursor( new Cursor( Cursor.HAND_CURSOR ) );
+		
+		/**
+		 * Os componentes Jbutton possuem um método chamado addActionListener() onde podemos passar como parâmetro um objeto do tipo ActionListener. 
+		 * A interface ActionListener exige a implementação de apenas um método: actionPerformed(ActionEvent e). Este método é responsável por realizar 
+		 * uma determinada ação quando for disparado este evento.
+		 * Optamos por implementar a interface direto na passagem de parâmetro e logo somos obrigados a implementar também os métodos que ela exige.
+		 * Dentro do método actionPerformed nós fazemos uma chamada ao método
+		 */
+		
 		jButton1.addActionListener( new java.awt.event.ActionListener() {
 			public void actionPerformed( java.awt.event.ActionEvent evt ) {
 				jButton1ActionPerformed( evt );
